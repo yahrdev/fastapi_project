@@ -1,4 +1,4 @@
-This project is a backend application built with FastAPI and MySQL. It provides endpoints for user registration, login, adding posts, retrieving posts, and deleting posts. The application follows the MVC design pattern and uses SQLAlchemy for database interactions. *It uses **FastAPI Users (https://fastapi-users.github.io/fastapi-users/latest/)** for user management and employs asynchronous programming for improved performance.*
+This project is a backend application built with FastAPI and MySQL. It provides endpoints for user registration, login, adding posts, retrieving posts, and deleting posts. The application follows the MVC design pattern and uses SQLAlchemy for database interactions. *It also uses **FastAPI Users (https://fastapi-users.github.io/fastapi-users/latest/)** for user management and employs asynchronous programming for improved performance.*
 
 <img src="fastapi_users_project.png" width="700">
 
