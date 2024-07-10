@@ -12,13 +12,13 @@ This project is a backend application built with FastAPI and MySQL. It provides 
 ### 2. register endpoint
 - **Description**: Authenticates users using their email and password.
 - **Inputs**: `email`, `password`
-- **Output**: Returns a token (JWT) upon successful login.
+- **Output**: Returns the user's data.
 
 ### 3. AddPost endpoint
 - **Description**: Adds a new post.
 - **Inputs**: `text`, `token`
 - **Output**: Returns `postID`.
-- **Details**: Validates the payload size and saves the post in memory.
+- **Details**: Validates the payload size (the payload should not exceed 1 MB in size) and saves the post in memory.
 
 ### 4. GetPosts endpoint
 - **Description**: Retrieves all posts added by the authenticated user.
@@ -31,5 +31,23 @@ This project is a backend application built with FastAPI and MySQL. It provides 
 - **Inputs**: `postID`, `token` (to authenticate the request)
 - **Output**: Confirms deletion of the corresponding post from memory.
 
+---------------------------------------------------------------------------------------------------------------
+
+## Moduls/programs used
+
+- Python and FastAPI: Core of the application.
+- MySQL: Database for storing user and post data.
+- Alembic: For database migrations.
+- Pydantic: For data validation.
+- JWT: For authentication.
+- FastAPI Users: For managing user registration, login, and authentication.
+- Asynchronous Programming: To handle concurrent requests efficiently.
+
+------------------------------------------------------------------------------------------------------------------
+
+## Requirements 
+
+- Python 3.9 or higher installed.
+- MySQL server installed.
 
 
