@@ -109,5 +109,5 @@ Start the FastAPI application:
 uvicorn src.main:app --host 0.0.0.0 --port 8000
 ```
 
-
+Access the application at http://localhost:8000. You can view the automatically generated API documentation at http://localhost:8000/docs.
 
