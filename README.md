@@ -50,4 +50,64 @@ This project is a backend application built with FastAPI and MySQL. It provides 
 - Python 3.9 or higher installed.
 - MySQL server installed.
 
+------------------------------------------------------------------------------------------------------------------
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <repository_url>
+cd fastapi_users_project
+```
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a .env file in the project root with the following content:
+
+```bash
+DB_USER = your_db_user
+DB_PASS = your_db_password
+DB_HOST = localhost
+DB_NAME = fastapiproj
+DB_PORT = 3306
+
+MODE = PROD
+
+SECRET = your_secret_key
+JWT_LIFETIME_MINUTES = 30
+```
+
+Set up the database:
+
+```bash
+mysql -u root -p
+CREATE DATABASE fastapiproj;
+```
+
+Use Alembic to create the tables:
+
+```bash
+alembic revision --autogenerate -m "Initial migration"
+alembic upgrade head
+```
+
+Start the FastAPI application:
+
+```bash
+uvicorn src.main:app --host 0.0.0.0 --port 8000
+```
+
+
 
